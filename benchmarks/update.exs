@@ -22,5 +22,13 @@ Benchee.run(
 
       :ok = :khepri.insert(storeId, [:aaa, :bbb, :ccc, :ddd, Integer.to_string(x)], value_10B)
     end)
-  end
+  end,
+  formatters: [
+    Benchee.Formatters.Console,
+    {Benchee.Formatters.Markdown,
+     file: "results/update.md",
+     description: """
+     This benchmark compares `khepri:insert` for an existing key, at the root of a tree and 5 levels deep
+     """}
+  ]
 )

@@ -34,5 +34,13 @@ Benchee.run(
   memory_time: 3.0,
   before_scenario: fn _ ->
     :ok = :khepri.clear_store(storeId)
-  end
+  end,
+  formatters: [
+    Benchee.Formatters.Console,
+    {Benchee.Formatters.Markdown,
+     file: "results/delete.md",
+     description: """
+     This benchmark compares `khepri:delete` at the root of a tree and 5 levels deep
+     """}
+  ]
 )
