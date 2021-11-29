@@ -1,6 +1,7 @@
 %{
   "aten": {:hex, :aten, "0.5.7", "f88eb38ceadc0710b84b5d78f0357d766733d80902d50ac69b70cdf834992daa", [:rebar3], [], "hexpm", "8b623c8be27b59a911d16ab0af41777b504c147bc0d60a29015fab58321c04b0"},
   "benchee": {:git, "https://github.com/bencheeorg/benchee.git", "07b844e2c61c79a756a94dbdf5fef379c72942f7", [tag: "main"]},
+  "benchee_markdown": {:hex, :benchee_markdown, "0.2.7", "2b3967a8c49acb4a1fd4a5dc42fe3fc6d9713154dad4c9053b07997a951ec6c4", [:mix], [{:benchee, ">= 0.99.0 and < 2.0.0", [hex: :benchee, repo: "hexpm", optional: false]}], "hexpm", "c2ed04e0c8f7fb4aa75c3006973e14cca93adf2bf61713e421530dee63368b12"},
   "deep_merge": {:hex, :deep_merge, "1.0.0", "b4aa1a0d1acac393bdf38b2291af38cb1d4a52806cf7a4906f718e1feb5ee961", [:mix], [], "hexpm", "ce708e5f094b9cd4e8f2be4f00d2f4250c4095be93f8cd6d018c753894885430"},
   "gen_batch_server": {:hex, :gen_batch_server, "0.8.6", "712e589a644afb1df4ee7b3a3e6182280086631ed5c3283394a27694fe16c0a9", [:rebar3], [], "hexpm", "b78679349168f27d7047f3283c9d766760b234d98c762aca9a1907f4ee3fd406"},
   "khepri": {:git, "https://github.com/rabbitmq/khepri.git", "8da72baa5204a4fce2cc8babae7574f867967524", [tag: "main"]},

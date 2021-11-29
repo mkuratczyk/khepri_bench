@@ -30,5 +30,13 @@ Benchee.run(
   before_each: fn value ->
     {Enum.random([:aaa, :bbb, :ccc, :ddd, :eee, :fff, :ggg, :hhh, :iii, :jjj]),
      Integer.to_string(Enum.random(1..1_000_000)), value}
-  end
+  end,
+  formatters: [
+    Benchee.Formatters.Console,
+    {Benchee.Formatters.Markdown,
+     file: "results/insert.md",
+     description: """
+     This benchmark compares `khepri:insert` with different value sizes.
+     """}
+  ]
 )
