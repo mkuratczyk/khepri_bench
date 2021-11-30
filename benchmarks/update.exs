@@ -28,13 +28,12 @@ Benchee.run(
     :ok = :khepri.clear_store(storeId)
 
     # data to be updated/swapped
-    :khepri.insert(storeId, [:root], value_10B)
-    :khepri.insert(storeId, [:aaa, :bbb, :ccc, :ddd, :eee], value_10B)
+    :ok = :khepri.insert(storeId, [:root], value_10B)
+    :ok = :khepri.insert(storeId, [:aaa, :bbb, :ccc, :ddd, :eee], value_10B)
 
     # insert some data first
     Enum.each(1..1_000, fn x ->
       :ok = :khepri.insert(storeId, [:root, Integer.to_string(x)], value_10B)
-
       :ok = :khepri.insert(storeId, [:aaa, :bbb, :ccc, :ddd, Integer.to_string(x)], value_10B)
     end)
   end,
