@@ -66,38 +66,56 @@ Run Time
 
   <tr>
     <td style="white-space: nowrap">update_root</td>
-    <td style="white-space: nowrap; text-align: right">1.76 K</td>
-    <td style="white-space: nowrap; text-align: right">569.20 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;41.27%</td>
-    <td style="white-space: nowrap; text-align: right">514.05 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">1588.97 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1.71 K</td>
+    <td style="white-space: nowrap; text-align: right">585.71 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;43.15%</td>
+    <td style="white-space: nowrap; text-align: right">521.35 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1616.27 &micro;s</td>
+  </tr>
+
+  <tr>
+    <td style="white-space: nowrap">insert_root</td>
+    <td style="white-space: nowrap; text-align: right">1.69 K</td>
+    <td style="white-space: nowrap; text-align: right">590.83 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;40.07%</td>
+    <td style="white-space: nowrap; text-align: right">538.16 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1656.32 &micro;s</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">update_5deep</td>
-    <td style="white-space: nowrap; text-align: right">1.69 K</td>
-    <td style="white-space: nowrap; text-align: right">592.01 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;43.18%</td>
-    <td style="white-space: nowrap; text-align: right">530.09 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">1640.45 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1.68 K</td>
+    <td style="white-space: nowrap; text-align: right">596.35 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;43.25%</td>
+    <td style="white-space: nowrap; text-align: right">534.05 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1639.39 &micro;s</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">swap_root</td>
-    <td style="white-space: nowrap; text-align: right">1.62 K</td>
-    <td style="white-space: nowrap; text-align: right">615.58 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;44.91%</td>
-    <td style="white-space: nowrap; text-align: right">542.88 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">1683.64 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1.66 K</td>
+    <td style="white-space: nowrap; text-align: right">601.68 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;43.49%</td>
+    <td style="white-space: nowrap; text-align: right">531.60 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1631.78 &micro;s</td>
+  </tr>
+
+  <tr>
+    <td style="white-space: nowrap">insert_5deep</td>
+    <td style="white-space: nowrap; text-align: right">1.64 K</td>
+    <td style="white-space: nowrap; text-align: right">609.79 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;43.68%</td>
+    <td style="white-space: nowrap; text-align: right">546.45 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1667.87 &micro;s</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">swap_5deep</td>
-    <td style="white-space: nowrap; text-align: right">1.61 K</td>
-    <td style="white-space: nowrap; text-align: right">621.77 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;47.72%</td>
-    <td style="white-space: nowrap; text-align: right">544.92 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">1662.12 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1.62 K</td>
+    <td style="white-space: nowrap; text-align: right">617.95 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;57.23%</td>
+    <td style="white-space: nowrap; text-align: right">537.04 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1676.78 &micro;s</td>
   </tr>
 
 </table>
@@ -112,26 +130,38 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">update_root</td>
-    <td style="white-space: nowrap;text-align: right">1.76 K</td>
+    <td style="white-space: nowrap;text-align: right">1.71 K</td>
     <td>&nbsp;</td>
   </tr>
 
   <tr>
-    <td style="white-space: nowrap">update_5deep</td>
+    <td style="white-space: nowrap">insert_root</td>
     <td style="white-space: nowrap; text-align: right">1.69 K</td>
-    <td style="white-space: nowrap; text-align: right">1.04x</td>
+    <td style="white-space: nowrap; text-align: right">1.01x</td>
+  </tr>
+
+  <tr>
+    <td style="white-space: nowrap">update_5deep</td>
+    <td style="white-space: nowrap; text-align: right">1.68 K</td>
+    <td style="white-space: nowrap; text-align: right">1.02x</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">swap_root</td>
-    <td style="white-space: nowrap; text-align: right">1.62 K</td>
-    <td style="white-space: nowrap; text-align: right">1.08x</td>
+    <td style="white-space: nowrap; text-align: right">1.66 K</td>
+    <td style="white-space: nowrap; text-align: right">1.03x</td>
+  </tr>
+
+  <tr>
+    <td style="white-space: nowrap">insert_5deep</td>
+    <td style="white-space: nowrap; text-align: right">1.64 K</td>
+    <td style="white-space: nowrap; text-align: right">1.04x</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">swap_5deep</td>
-    <td style="white-space: nowrap; text-align: right">1.61 K</td>
-    <td style="white-space: nowrap; text-align: right">1.09x</td>
+    <td style="white-space: nowrap; text-align: right">1.62 K</td>
+    <td style="white-space: nowrap; text-align: right">1.06x</td>
   </tr>
 
 </table>
@@ -148,23 +178,33 @@ Memory Usage
   </tr>
   <tr>
     <td style="white-space: nowrap">update_root</td>
-    <td style="white-space: nowrap">0.90 KB</td>
+    <td style="white-space: nowrap">1 KB</td>
     <td>&nbsp;</td>
+  </tr>
+    <tr>
+    <td style="white-space: nowrap">insert_root</td>
+    <td style="white-space: nowrap">0.90 KB</td>
+    <td>0.9x</td>
   </tr>
     <tr>
     <td style="white-space: nowrap">update_5deep</td>
     <td style="white-space: nowrap">0.96 KB</td>
-    <td>1.07x</td>
+    <td>0.96x</td>
   </tr>
     <tr>
     <td style="white-space: nowrap">swap_root</td>
     <td style="white-space: nowrap">1.05 KB</td>
-    <td>1.17x</td>
+    <td>1.05x</td>
+  </tr>
+    <tr>
+    <td style="white-space: nowrap">insert_5deep</td>
+    <td style="white-space: nowrap">0.96 KB</td>
+    <td>0.96x</td>
   </tr>
     <tr>
     <td style="white-space: nowrap">swap_5deep</td>
     <td style="white-space: nowrap">1.27 KB</td>
-    <td>1.41x</td>
+    <td>1.27x</td>
   </tr>
 </table>
 

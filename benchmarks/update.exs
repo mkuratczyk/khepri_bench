@@ -5,9 +5,13 @@ value_10B = List.first(Enum.take(StreamData.binary(length: 10), 1))
 
 Benchee.run(
   %{
-    "update_root" => fn _ -> :ok = :khepri.insert(storeId, [:root], value_10B) end,
+    "insert_root" => fn _ -> :ok = :khepri.insert(storeId, [:root], value_10B) end,
+    "update_root" => fn _ -> :ok = :khepri.update(storeId, [:root], value_10B) end,
     "swap_root" => fn _ ->
       :ok = :khepri.compare_and_swap(storeId, [:root], value_10B, value_10B)
+    end,
+    "insert_5deep" => fn _ ->
+      :ok = :khepri.insert(storeId, [:aaa, :bbb, :ccc, :ddd, :eee], value_10B)
     end,
     "update_5deep" => fn _ ->
       :ok = :khepri.insert(storeId, [:aaa, :bbb, :ccc, :ddd, :eee], value_10B)
