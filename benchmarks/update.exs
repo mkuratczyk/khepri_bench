@@ -6,8 +6,15 @@ value_10B = List.first(Enum.take(StreamData.binary(length: 10), 1))
 Benchee.run(
   %{
     "update_root" => fn _ -> :ok = :khepri.insert(storeId, [:root], value_10B) end,
+    "swap_root" => fn _ ->
+      :ok = :khepri.compare_and_swap(storeId, [:root], value_10B, value_10B)
+    end,
     "update_5deep" => fn _ ->
       :ok = :khepri.insert(storeId, [:aaa, :bbb, :ccc, :ddd, :eee], value_10B)
+    end,
+    "swap_5deep" => fn _ ->
+      :ok =
+        :khepri.compare_and_swap(storeId, [:aaa, :bbb, :ccc, :ddd, :eee], value_10B, value_10B)
     end
   },
   warmup: 0.1,
@@ -15,6 +22,10 @@ Benchee.run(
   memory_time: 3.0,
   before_scenario: fn _ ->
     :ok = :khepri.clear_store(storeId)
+
+    # data to be updated/swapped
+    :khepri.insert(storeId, [:root], value_10B)
+    :khepri.insert(storeId, [:aaa, :bbb, :ccc, :ddd, :eee], value_10B)
 
     # insert some data first
     Enum.each(1..1_000, fn x ->

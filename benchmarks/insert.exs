@@ -12,6 +12,7 @@ Benchee.run(
   },
   warmup: 0.1,
   time: 3.0,
+  parallel: 1,
   memory_time: 3.0,
   inputs: %{
     "10 bytes value" => List.first(Enum.take(StreamData.binary(length: 10), 1)),

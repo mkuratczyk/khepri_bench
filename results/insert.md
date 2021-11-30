@@ -68,20 +68,20 @@ Run Time
 
   <tr>
     <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap; text-align: right">1.98 K</td>
-    <td style="white-space: nowrap; text-align: right">505.41 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;40.22%</td>
-    <td style="white-space: nowrap; text-align: right">457.52 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">1379.29 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1.62 K</td>
+    <td style="white-space: nowrap; text-align: right">615.46 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;38.89%</td>
+    <td style="white-space: nowrap; text-align: right">565.19 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1663.96 &micro;s</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap; text-align: right">1.96 K</td>
-    <td style="white-space: nowrap; text-align: right">509.37 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;46.52%</td>
-    <td style="white-space: nowrap; text-align: right">452.85 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">1404.73 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1.60 K</td>
+    <td style="white-space: nowrap; text-align: right">624.59 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;49.67%</td>
+    <td style="white-space: nowrap; text-align: right">556.13 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1716.21 &micro;s</td>
   </tr>
 
 </table>
@@ -96,13 +96,13 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap;text-align: right">1.98 K</td>
+    <td style="white-space: nowrap;text-align: right">1.62 K</td>
     <td>&nbsp;</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap; text-align: right">1.96 K</td>
+    <td style="white-space: nowrap; text-align: right">1.60 K</td>
     <td style="white-space: nowrap; text-align: right">1.01x</td>
   </tr>
 
@@ -120,12 +120,12 @@ Memory Usage
   </tr>
   <tr>
     <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap">832.98 B</td>
+    <td style="white-space: nowrap">832.86 B</td>
     <td>&nbsp;</td>
   </tr>
     <tr>
     <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap">960.19 B</td>
+    <td style="white-space: nowrap">960.14 B</td>
     <td>1.15x</td>
   </tr>
 </table>
@@ -148,20 +148,20 @@ Run Time
 
   <tr>
     <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap; text-align: right">1.92 K</td>
-    <td style="white-space: nowrap; text-align: right">519.84 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;45.65%</td>
-    <td style="white-space: nowrap; text-align: right">450.15 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">1386.86 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1.61 K</td>
+    <td style="white-space: nowrap; text-align: right">623.01 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;55.76%</td>
+    <td style="white-space: nowrap; text-align: right">541.49 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1691.64 &micro;s</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap; text-align: right">1.88 K</td>
-    <td style="white-space: nowrap; text-align: right">530.68 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;46.31%</td>
-    <td style="white-space: nowrap; text-align: right">452.28 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">1389.10 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1.59 K</td>
+    <td style="white-space: nowrap; text-align: right">627.28 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;48.09%</td>
+    <td style="white-space: nowrap; text-align: right">537.02 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1680.89 &micro;s</td>
   </tr>
 
 </table>
@@ -176,14 +176,14 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap;text-align: right">1.92 K</td>
+    <td style="white-space: nowrap;text-align: right">1.61 K</td>
     <td>&nbsp;</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap; text-align: right">1.88 K</td>
-    <td style="white-space: nowrap; text-align: right">1.02x</td>
+    <td style="white-space: nowrap; text-align: right">1.59 K</td>
+    <td style="white-space: nowrap; text-align: right">1.01x</td>
   </tr>
 
 </table>
@@ -200,12 +200,12 @@ Memory Usage
   </tr>
   <tr>
     <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap">833.22 B</td>
+    <td style="white-space: nowrap">833.09 B</td>
     <td>&nbsp;</td>
   </tr>
     <tr>
     <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap">960.12 B</td>
+    <td style="white-space: nowrap">960.03 B</td>
     <td>1.15x</td>
   </tr>
 </table>
@@ -228,20 +228,20 @@ Run Time
 
   <tr>
     <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap; text-align: right">1.36 K</td>
-    <td style="white-space: nowrap; text-align: right">733.03 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;53.00%</td>
-    <td style="white-space: nowrap; text-align: right">500.97 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">1559.14 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1.13 K</td>
+    <td style="white-space: nowrap; text-align: right">881.12 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;56.38%</td>
+    <td style="white-space: nowrap; text-align: right">596.02 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1865.45 &micro;s</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap; text-align: right">1.34 K</td>
-    <td style="white-space: nowrap; text-align: right">746.70 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;53.89%</td>
-    <td style="white-space: nowrap; text-align: right">507.09 &micro;s</td>
-    <td style="white-space: nowrap; text-align: right">1622.84 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1.07 K</td>
+    <td style="white-space: nowrap; text-align: right">932.10 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;57.24%</td>
+    <td style="white-space: nowrap; text-align: right">642.03 &micro;s</td>
+    <td style="white-space: nowrap; text-align: right">1960.46 &micro;s</td>
   </tr>
 
 </table>
@@ -256,14 +256,14 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap;text-align: right">1.36 K</td>
+    <td style="white-space: nowrap;text-align: right">1.13 K</td>
     <td>&nbsp;</td>
   </tr>
 
   <tr>
     <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap; text-align: right">1.34 K</td>
-    <td style="white-space: nowrap; text-align: right">1.02x</td>
+    <td style="white-space: nowrap; text-align: right">1.07 K</td>
+    <td style="white-space: nowrap; text-align: right">1.06x</td>
   </tr>
 
 </table>
@@ -280,12 +280,12 @@ Memory Usage
   </tr>
   <tr>
     <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap">832.88 B</td>
+    <td style="white-space: nowrap">832.72 B</td>
     <td>&nbsp;</td>
   </tr>
     <tr>
     <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap">960.04 B</td>
+    <td style="white-space: nowrap">960.05 B</td>
     <td>1.15x</td>
   </tr>
 </table>
@@ -307,21 +307,21 @@ Run Time
   </tr>
 
   <tr>
-    <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap; text-align: right">723.42</td>
-    <td style="white-space: nowrap; text-align: right">1.38 ms</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;8.80%</td>
-    <td style="white-space: nowrap; text-align: right">1.37 ms</td>
-    <td style="white-space: nowrap; text-align: right">1.76 ms</td>
+    <td style="white-space: nowrap">insert_root</td>
+    <td style="white-space: nowrap; text-align: right">612.03</td>
+    <td style="white-space: nowrap; text-align: right">1.63 ms</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;7.71%</td>
+    <td style="white-space: nowrap; text-align: right">1.62 ms</td>
+    <td style="white-space: nowrap; text-align: right">2.01 ms</td>
   </tr>
 
   <tr>
-    <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap; text-align: right">712.80</td>
-    <td style="white-space: nowrap; text-align: right">1.40 ms</td>
-    <td style="white-space: nowrap; text-align: right">&plusmn;8.87%</td>
-    <td style="white-space: nowrap; text-align: right">1.38 ms</td>
-    <td style="white-space: nowrap; text-align: right">1.82 ms</td>
+    <td style="white-space: nowrap">insert_5deep</td>
+    <td style="white-space: nowrap; text-align: right">590.77</td>
+    <td style="white-space: nowrap; text-align: right">1.69 ms</td>
+    <td style="white-space: nowrap; text-align: right">&plusmn;11.90%</td>
+    <td style="white-space: nowrap; text-align: right">1.67 ms</td>
+    <td style="white-space: nowrap; text-align: right">2.09 ms</td>
   </tr>
 
 </table>
@@ -335,15 +335,15 @@ Comparison
     <th style="text-align: right">IPS</th>
     <th style="text-align: right">Slower</th>
   <tr>
-    <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap;text-align: right">723.42</td>
+    <td style="white-space: nowrap">insert_root</td>
+    <td style="white-space: nowrap;text-align: right">612.03</td>
     <td>&nbsp;</td>
   </tr>
 
   <tr>
-    <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap; text-align: right">712.80</td>
-    <td style="white-space: nowrap; text-align: right">1.01x</td>
+    <td style="white-space: nowrap">insert_5deep</td>
+    <td style="white-space: nowrap; text-align: right">590.77</td>
+    <td style="white-space: nowrap; text-align: right">1.04x</td>
   </tr>
 
 </table>
@@ -359,14 +359,14 @@ Memory Usage
     <th style="text-align: right">Factor</th>
   </tr>
   <tr>
-    <td style="white-space: nowrap">insert_5deep</td>
-    <td style="white-space: nowrap">960 B</td>
+    <td style="white-space: nowrap">insert_root</td>
+    <td style="white-space: nowrap">832.99 B</td>
     <td>&nbsp;</td>
   </tr>
     <tr>
-    <td style="white-space: nowrap">insert_root</td>
-    <td style="white-space: nowrap">832.20 B</td>
-    <td>0.87x</td>
+    <td style="white-space: nowrap">insert_5deep</td>
+    <td style="white-space: nowrap">960 B</td>
+    <td>1.15x</td>
   </tr>
 </table>
 
