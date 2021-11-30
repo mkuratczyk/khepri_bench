@@ -5,12 +5,12 @@ value_10B = List.first(Enum.take(StreamData.binary(length: 10), 1))
 
 Benchee.run(
   %{
-    "exists_root" => fn _ -> true = :khepri.exists(storeId, [:root]) end,
-    "does_not_exist_root" => fn _ -> false = :khepri.exists(storeId, [:miss]) end,
-    "exists_5deep" => fn _ -> true = :khepri.exists(storeId, [:aaa, :bbb, :ccc, :ddd, :eee]) end,
-    "does_not_exist_5deep" => fn _ -> false = :khepri.exists(storeId, [:aaa, :bbb, :ccc, :ddd, :miss]) end,
-    "exists_10deep" => fn _ -> true = :khepri.exists(storeId, [:aaa, :bbb, :ccc, :ddd, :eee, :fff, :ggg, :hhh, :iii, :jjj]) end,
-    "does_not_exist_10deep" => fn _ -> false = :khepri.exists(storeId, [:aaa, :bbb, :ccc, :ddd, :eee, :fff, :ggg, :hhh, :iii, :miss]) end
+    "has_data_root" => fn _ -> true = :khepri.has_data(storeId, [:root]) end,
+    "does_not_exist_root" => fn _ -> false = :khepri.has_data(storeId, [:miss]) end,
+    "has_data_5deep" => fn _ -> true = :khepri.has_data(storeId, [:aaa, :bbb, :ccc, :ddd, :eee]) end,
+    "does_not_exist_5deep" => fn _ -> false = :khepri.has_data(storeId, [:aaa, :bbb, :ccc, :ddd, :miss]) end,
+    "has_data_10deep" => fn _ -> true = :khepri.has_data(storeId, [:aaa, :bbb, :ccc, :ddd, :eee, :fff, :ggg, :hhh, :iii, :jjj]) end,
+    "does_not_exist_10deep" => fn _ -> false = :khepri.has_data(storeId, [:aaa, :bbb, :ccc, :ddd, :eee, :fff, :ggg, :hhh, :iii, :miss]) end
   },
   warmup: 0.1,
   time: 3.0,
@@ -32,9 +32,9 @@ Benchee.run(
   formatters: [
     Benchee.Formatters.Console,
     {Benchee.Formatters.Markdown,
-     file: "results/exists.md",
+     file: "results/has_data.md",
      description: """
-     This benchmark compares `khepri:exists` for an existing and non-existing keys, at the root and deep in the tree
+     This benchmark compares `khepri:has_data` for an existing and non-existing keys, at the root and deep in the tree
      """}
   ]
 )
